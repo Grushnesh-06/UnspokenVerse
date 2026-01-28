@@ -1,0 +1,154 @@
+:root {
+  --nav-bg: #9b5de0;
+  --nav-text: #2b2b2b;
+  --bg-color: #ffffff;
+  --text-color: #2b2b2b;
+  --card-bg: #ffffff;
+}
+
+/* DARK MODE */
+[data-theme='dark'] {
+  --nav-bg: #1f1f37;
+  --nav-text: #9b5de0;
+  --bg-color: #030304;
+  --text-color: #9b5de0; 
+  --card-bg: #90909b;
+}
+/*#e9d5ff*/
+
+/* Dark mode: ONLY active nav link should be white */
+[data-theme='dark'] .custom-navbar .nav-link.active {
+  color: #cc9cff !important;
+  text-decoration: underline;
+}
+
+/* Dark mode search button fix */
+[data-theme='dark'] .custom-navbar .btn-outline-dark {
+  color: #cc9cff;
+  border-color: #cc9cff;
+}
+
+[data-theme='dark'] .custom-navbar .btn-outline-dark:hover {
+  background-color: #cc9cff;
+  color: #0f0f14;
+}
+
+[data-theme='dark'] .custom-navbar .form-control {
+  background-color: #1e1e2e;
+  color: #e9d5ff;
+  border-color: #c4b5fd;
+}
+
+/* Dark mode search placeholder fix */
+[data-theme='dark'] .custom-navbar .form-control::placeholder {
+  color: #c4b5fd;
+  opacity: 1;
+}
+
+/* Home logo - light mode */
+.home-logo {
+  background-image: url('/src/assets/UV.jpeg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+/* Home logo - dark mode */
+[data-theme='dark'] .home-logo {
+  background-image: url('/src/assets/UVdark.png');
+}
+
+
+/* Write Poem – MUI TextField dark mode fix */
+[data-theme='dark'] .MuiOutlinedInput-root {
+  background-color: #ede9fe;
+  border-radius: 6px;
+}
+
+[data-theme='dark'] .MuiOutlinedInput-notchedOutline {
+  border-color: #c4b5fd;
+}
+
+[data-theme='dark'] .MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline {
+  border-color: #a78bfa;
+}
+
+[data-theme='dark'] .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+  border-color: #8b5cf6;
+}
+
+[data-theme='dark'] .MuiInputBase-input {
+  color: #1f2937;
+}
+
+[data-theme='dark'] .MuiInputLabel-root {
+  color: #6b21a8;
+}
+
+[data-theme='dark'] .MuiInputBase-input::placeholder {
+  color: #6b21a8;
+  opacity: 1;
+}
+
+/* Dark mode – MUI focused label color fix */
+[data-theme='dark'] .MuiInputLabel-root.Mui-focused {
+  color: #8b5cf6;
+}
+
+/* Dark mode – Post Poem button styling */
+[data-theme='dark'] .MuiButton-outlined {
+  background-color: #ede9fe;
+  color: #1f2937;
+  border-color: #c4b5fd;
+}
+
+[data-theme='dark'] .MuiButton-outlined:hover {
+  background-color: #ddd6fe;
+  border-color: #a78bfa;
+}
+
+/* Theme toggle icons */
+.theme-icon {
+  color: var(--nav-text);
+}
+
+/* Light mode: show moon, hide sun */
+[data-theme='light'] .sun {
+  display: none;
+}
+
+/* Dark mode: show sun, hide moon */
+[data-theme='dark'] .moon {
+  display: none;
+}
+
+
+
+
+
+
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+.custom-navbar {
+  background-color: var(--nav-bg);
+}
+
+.custom-navbar .nav-link,
+.custom-navbar .navbar-brand {
+  color: var(--nav-text);
+}
+
+.custom-navbar .nav-link.active {
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+/* Cards */
+.card {
+  background-color: var(--card-bg);
+  color: var(--text-color);
+}
