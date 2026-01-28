@@ -20,8 +20,14 @@ It can be described as *Instagram for poets*, designed for reading, writing, and
 
 ## 🖼️ Preview
 
-![UnspokenVerse Preview](assets/light.png)
-![UnspokenVerse Preview](assets/dark.png)
+<p align="center">
+  <img src="src/assets/light.png" width="700" alt="UnspokenVerse Preview" />
+</p>
+
+<p align="center">
+  <img src="src/assets/dark.png" width="700" alt="UnspokenVerse Preview" />
+</p>
+
 
 ---
 
